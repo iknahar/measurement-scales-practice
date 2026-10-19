@@ -1,5 +1,5 @@
 from orders import load_orders
 #
 df = load_orders()
-# pandas summarises every numeric column, whether or not it should
+# summarise every column that looks like a number
 print(df.describe().round(1))

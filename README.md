@@ -20,7 +20,7 @@ python 01_describe_nonsense.py
 |---|---|
 | `01_describe_nonsense.py` | `describe()` prints a mean postcode without blinking |
 | `02_nominal_relabel.py` | relabel a name tag: counts survive, the mean does not |
-| `03_ordered_categorical.py` | ordered `Categorical`, why `mean()` and `median()` refuse, and the codes workaround |
+| `03_ordered_categorical.py` | ordered `Categorical`, and why `mean()` refuses |
 | `04_spice_recode.py` | two honest codings of the same ordinal data give opposite "spicier" verdicts |
 | `05_temperature.py` | 20 °C is twice 10 °C only in Celsius; gap ratios survive conversion |
 | `06_ratio_units.py` | changing units keeps a ratio, moving the zero breaks it |
@@ -35,7 +35,7 @@ python 01_describe_nonsense.py
 1. Add a `blood_group` column to `orders.py`. Which scale is it, and which `describe()` rows would the checker allow?
 2. In `04_spice_recode.py`, find the exact code for "medium" where the mean verdict flips.
 3. Your survey asks "How many hours did you sleep?" and "How rested do you feel, 1 to 5?". Name the scale of each.
-4. Mark `stars` as interval instead of ordinal (the lenient side of the Likert fight). How many cells does the checker keep now?
+4. In `09_legality_checker.py`, remove `"stars"` from `SCALE` (the lenient side of the Likert fight). How many cells does the checker keep now?
 5. Is "year of birth" interval or ratio? What about "age"? Explain the difference in one sentence.
 6. Encode `["S", "M", "L", "XL"]` with `OrdinalEncoder` without passing `categories`. What order do you get, and how do you fix it?
 
